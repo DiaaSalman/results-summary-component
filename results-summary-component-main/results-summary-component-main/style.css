@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+html {
+  font-size: 62.5%;
+}
+
+.flex {
+  display: flex;
+}
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+.flex-space {
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-column {
+  flex-direction: column;
+}
+.grid {
+  display: grid;
+}
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.results-summary-box {
+  width: 50rem;
+  box-shadow: 1rem 1rem 4.8rem hsla(241, 100%, 89%, 0.4);
+  border-radius: 1.6rem;
+}
+.results-summary-box .resuls-summary-box__result {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  border-radius: 1.6rem;
+  padding: 2.8rem 2.8rem 3.2rem;
+  text-align: center;
+}
+.results-summary-box .resuls-summary-box__result .result-title {
+  font-size: 1.6rem;
+  color: hsl(241, 100%, 89%);
+  margin-bottom: 0.8rem;
+}
+
+.results-summary-box .resuls-summary-box__result .result-circle {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  margin: 1.8rem;
+}
+.results-summary-box .resuls-summary-box__result .result-circle .result-points {
+  color: #fff;
+  font-size: 4.2rem;
+  font-weight: 700;
+}
+.results-summary-box
+  .resuls-summary-box__result
+  .result-circle
+  .result-all-points {
+  color: hsl(241, 100%, 89%);
+}
+.results-summary-box .resuls-summary-box__result .message {
+  font-size: 2.2rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.results-summary-box .resuls-summary-box__result .message-info {
+  color: hsl(241, 100%, 89%);
+  font-size: 1.4rem;
+}
+
+.results-summary-box .resuls-summary-box__summary {
+  padding: 2.4rem;
+}
+.results-summary-box .resuls-summary-box__summary .summary-title {
+  font-size: 1.8rem;
+  color: #1f2331;
+  margin-bottom: 1.6rem;
+}
+.results-summary-box .resuls-summary-box__summary .summary-elements {
+  gap: 1.2rem;
+}
+.results-summary-box .resuls-summary-box__summary .summary-card {
+  padding: 1.2rem;
+  border-radius: 0.6rem;
+}
+.reaction {
+  background-color: #fff6f5;
+}
+.reaction .element-title .element-text {
+  color: hsl(0, 100%, 67%);
+}
+.memory {
+  background-color: #fffbf2;
+}
+.memory .element-title .element-text {
+  color: hsl(39, 100%, 56%);
+}
+.verbal {
+  background-color: #f2fafa;
+}
+.verbal .element-title .element-text {
+  color: hsl(166, 100%, 37%);
+}
+.visual {
+  background-color: #f3f3fd;
+}
+.visual .element-title .element-text {
+  color: hsl(234, 85%, 45%);
+}
+.results-summary-box .resuls-summary-box__summary .summary-card .element-title {
+  gap: 0.8rem;
+}
+.results-summary-box
+  .resuls-summary-box__summary
+  .summary-card
+  .element-title
+  img {
+  width: 1.6rem;
+}
+.results-summary-box
+  .resuls-summary-box__summary
+  .summary-card
+  .element-title
+  .element-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.results-summary-box .resuls-summary-box__summary .summary-card .score {
+  font-size: 1.2rem;
+  color: #1f2331;
+  font-weight: 800;
+}
+.results-summary-box .resuls-summary-box__summary .summary-card .score span {
+  font-weight: 500;
+  color: #939ca3;
+}
+.results-summary-box .resuls-summary-box__summary .continue-btn {
+  width: 100%;
+  background-color: #303b59;
+  color: #fff;
+  border: none;
+  outline: 0;
+  border-radius: 30rem;
+  padding: 1.2rem 0;
+  font-weight: 700;
+  margin-top: 2.4rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+.results-summary-box .resuls-summary-box__summary .continue-btn:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
+
+/* Start Responsive */
+@media only screen and (max-width: 525px) {
+  body {
+    height: auto;
+  }
+  .grid-2-cols {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .results-summary-box {
+    width: 100%;
+  }
+  .results-summary-box .resuls-summary-box__result {
+    border-radius: 0 0 1.6rem 1.6rem;
+  }
+}

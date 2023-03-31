@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <div class="container flex flex-center">
+      <div class="results-summary-box grid grid-2-cols">
+        <div class="resuls-summary-box__result flex flex-center flex-column">
+          <h3 class="result-title">Your Result</h3>
+          <div class="result-circle flex flex-center flex-column">
+            <p class="result-points">76</p>
+            <p class="result-all-points">of 100</p>
+          </div>
+          <p class="message">Great</p>
+          <p class="message-info">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+        <div class="resuls-summary-box__summary">
+          <h3 class="summary-title">Summary</h3>
+          <div class="summary-elements grid">
+            <div class="summary-card reaction flex flex-space">
+              <div class="element-title flex flex-center">
+                <img
+                  src="./assets/images/icon-reaction.svg"
+                  alt="reaction-icon"
+                />
+                <p class="element-text">Reaction</p>
+              </div>
+              <p class="score">
+                80
+                <span>/ 100</span>
+              </p>
+            </div>
+            <div class="summary-card memory flex flex-space">
+              <div class="element-title flex flex-center">
+                <img src="./assets/images/icon-memory.svg" alt="memory-icon" />
+                <p class="element-text">Memory</p>
+              </div>
+              <p class="score">
+                92
+                <span>/ 100</span>
+              </p>
+            </div>
+            <div class="summary-card verbal flex flex-space">
+              <div class="element-title flex flex-center">
+                <img src="./assets/images/icon-verbal.svg" alt="verbal-icon" />
+                <p class="element-text">Verbal</p>
+              </div>
+              <p class="score">
+                61
+                <span>/ 100</span>
+              </p>
+            </div>
+            <div class="summary-card visual flex flex-space">
+              <div class="element-title flex flex-center">
+                <img src="./assets/images/icon-visual.svg" alt="visual-icon" />
+                <p class="element-text">Visual</p>
+              </div>
+              <p class="score">
+                72
+                <span>/ 100</span>
+              </p>
+            </div>
+          </div>
+          <button class="continue-btn">Continue</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
